@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBG">
+
+    <!-- Элемент график-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:drawable/editbox_background_normal"
+        android:layout_margin="10dp">
+        <!-- Название графика и ComboBox-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Цена бензина"/>
+
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+        </LinearLayout>
+
+        <!-- График заправок -->
+        <LinearLayout
+            android:id="@+id/GraphLayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+    </LinearLayout>
+    <!-- Итоговые данные -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/stlTotalCaption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Итого" />
+    </LinearLayout>
+
+    <!-- Начальная дата-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/labelWidth"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/stlLabels"
+                android:text="Начиная с" />
+
+            <TextView
+                style="@style/stlEI"
+                android:text="@string/eiDate" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtTotalBeginDate"
+            style="@style/stlValue"
+            android:text="@string/smplDate" />
+    </LinearLayout>
+
+    <!-- Всего залито топлива-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/labelWidth"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/stlLabels"
+                android:text="Всего залито топлива" />
+
+            <TextView
+                style="@style/stlEI"
+                android:text="@string/eiVolume" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtTotalVolume"
+            style="@style/stlValue"
+            android:text="@string/smplVolume" />
+    </LinearLayout>
+
+    <!-- Потрачено денег-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/labelWidth"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/stlLabels"
+                android:text="Потрачено денег" />
+
+            <TextView
+                style="@style/stlEI"
+                android:text="@string/eiPrice" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtTotalSumma"
+            style="@style/stlValue"
+            android:text="@string/smplSumma" />
+    </LinearLayout>
+
+    <!-- Пройденый километраж-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/labelWidth"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/stlLabels"
+                android:text="Пройденое расстояни" />
+
+            <TextView
+                style="@style/stlEI"
+                android:text="@string/eiOdometr" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtTotalOdometr"
+            style="@style/stlValue"
+
+            android:text="@string/smplOdometr" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Кнопка добавления информации о новой заправке-->
+        <Button
+            android:id="@+id/btnNewFullUp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Н.заправка"
+            android:textSize="20sp" />
+
+        <!-- Удаление данных-->
+        <Button
+            android:id="@+id/btnDeleteRecords"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Удалить"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnListOfFillUps"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Список"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

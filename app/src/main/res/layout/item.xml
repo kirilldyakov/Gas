@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- ID -->
+        <TextView
+            android:id="@+id/tv_itm_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:text=""
+            android:textSize="18sp" />
+
+        <!-- DateTime-->
+        <TextView
+            android:id="@+id/tv_itm_datetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:text=""
+            android:textSize="18sp" />
+        <!-- Odometr-->
+        <TextView
+            android:id="@+id/tv_itm_odometr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:text=""
+            android:textSize="18sp" />
+
+
+        <!-- FullTank -->
+        <TextView
+            android:id="@+id/tv_itm_fulltank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:text=""
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Price-->
+        <TextView
+            android:id="@+id/tv_itm_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:text=""
+            android:textSize="18sp" />
+        <!-- Volume -->
+        <TextView
+            android:id="@+id/tv_itm_volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:text=""
+            android:textSize="18sp" />
+        <!-- Summa-->
+        <TextView
+            android:id="@+id/tv_itm_summa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:text=""
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+

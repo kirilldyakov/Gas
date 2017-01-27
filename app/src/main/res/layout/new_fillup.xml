@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Шапка -->
+    <LinearLayout
+        style="@style/stlEmptyBlock"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal" />
+
+    <!-- Дата заправки   android:inputType="date"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/labelWidth"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/stlLabels"
+                android:text="@string/labDate" />
+
+            <TextView
+                style="@style/stlEI"
+                android:text="@string/eiDate" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnDate"
+            style="@style/stlValue"
+            android:text="@string/smplDate"
+            />
+    </LinearLayout>
+
+    <!-- Время заправки -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/labelWidth"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/stlLabels"
+                android:text="@string/labTime" />
+
+            <TextView
+                style="@style/stlEI"
+                android:text="@string/eiDate" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnTime"
+            style="@style/stlValue"
+            android:text="@string/smplTime" />
+    </LinearLayout>
+
+    <!-- Объем заправленного бензина -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/labelWidth"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/stlLabels"
+                android:text="@string/labVolume" />
+
+            <TextView
+                style="@style/stlEI"
+                android:text="@string/eiVolume" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edVolume"
+            style="@style/stlValue"
+            android:inputType="numberDecimal"
+            android:text="@string/smplVolume"
+            />
+    </LinearLayout>
+
+    <!-- Цена бензина за 1 литр -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/labelWidth"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/stlLabels"
+                android:text="@string/labPrice" />
+
+            <TextView
+                style="@style/stlEI"
+                android:text="@string/eiPrice" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edPrice"
+            style="@style/stlValue"
+            android:inputType="numberDecimal"
+            android:text="@string/smplPrice" />
+    </LinearLayout>
+
+    <!-- Сумма по чеку-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/labelWidth"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/stlLabels"
+                android:text="@string/labSumma" />
+
+            <TextView
+                style="@style/stlEI"
+                android:text="@string/eiSumma" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edSumma"
+            style="@style/stlValue"
+            android:inputType="numberDecimal"
+            android:text="@string/smplSumma" />
+    </LinearLayout>
+
+    <!-- Показания одометра-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/labelWidth"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/stlLabels"
+                android:text="@string/labOdometr" />
+
+            <TextView
+                style="@style/stlEI"
+                android:text="@string/eiOdometr" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edOdometr"
+            style="@style/stlValue"
+            android:inputType="number"
+            android:text="@string/smplOdometr" />
+    </LinearLayout>
+
+    <!-- Пропуск -->
+    <LinearLayout
+        style="@style/stlEmptyBlock"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal" />
+
+    <!-- Заправка до оолного бака-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/labelWidth"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/stlLabels"
+                android:text="@string/labFullTank" />
+
+            <TextView
+                style="@style/stlEI"
+                android:text="" />
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/swFullTank"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textOff="@string/ruNo"
+            android:textOn="@string/ruYes"
+
+            />
+    </LinearLayout>
+
+    <!-- Пропуск -->
+    <LinearLayout
+        style="@style/stlEmptyBlock"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal" />
+
+    <!-- Кнопка записать -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnOK"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:text="@string/btnOK" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBG"
+    android:orientation="vertical"
+    android:paddingEnd="10dp"
+    android:paddingStart="10dp">
+
+    <!-- Верхний-->
+    <LinearLayout style="@style/stlGroupLevel_1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_date_range_black_24dp" />
+
+            <Button
+                style="@style/stlTopButton"
+                android:text="365"></Button>
+
+
+            <Button
+                style="@style/stlTopButton"
+                android:text="31"></Button>
+
+            <Button
+                style="@style/stlTopButton"
+                android:text="7"></Button>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Верхний-->
+    <LinearLayout style="@style/stlGroupLevel_1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Тип графика"
+                android:layout_gravity="center_vertical"
+                android:textSize="20sp"/>
+            <!--
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></Spinner-->
+            <Spinner
+                android:id="@+id/spnType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="40sp"
+                />
+        </LinearLayout>
+
+        <!-- График заправок -->
+        <LinearLayout
+            android:id="@+id/GraphLayout"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal" />
+    </LinearLayout>
+
+    <!-- Нижний-->
+    <LinearLayout style="@style/stlGroupLevel_1">
+        <!-- 1 -->
+        <LinearLayout style="@style/stlGroupLevel_2">
+            <!-- Всего залито топлива-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:drawable/editbox_background_normal"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/stlCaption"
+                    android:text="Заправлено" />
+
+                <TextView
+                    android:id="@+id/txtTotalVolume"
+                    style="@style/stlValue"
+                    android:text="102.3 л." />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:drawable/editbox_background_normal"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/stlCaption"
+                    android:text="Потрачено" />
+
+                <TextView
+                    android:id="@+id/txtTotalSumma"
+                    style="@style/stlValue"
+                    android:text="--- р." />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 2 -->
+        <LinearLayout style="@style/stlGroupLevel_2">
+            <!-- Расстояние-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:drawable/editbox_background_normal"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/stlCaption"
+                    android:text="Расстояние" />
+
+                <TextView
+                    android:id="@+id/txtTotalOdometr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="2 548 км."
+                    android:textColor="@color/_colorTextDark"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <!-- Средний расход-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:drawable/editbox_background_normal"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/stlCaption"
+                    android:text="Расход" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="8,9"
+                    android:textColor="@color/_colorTextDark"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 3 -->
+        <LinearLayout style="@style/stlGroupLevel_2">
+            <!-- Расход км/л-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:drawable/editbox_background_normal"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/stlCaption"
+                    android:text="Расход км/л" />
+
+                <TextView
+                    android:id="@+id/txtRateKML"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="12,2 км/л"
+                    android:textColor="@color/_colorTextDark"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <!-- Стоимость руб/км-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:drawable/editbox_background_normal"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/stlCaption"
+                    android:text="Стоимость РКМ" />
+
+                <TextView
+                    android:id="@+id/txtRateRKM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="3р. 20к."
+                    android:textColor="@color/_colorTextDark"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- кнопки-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <!-- Кнопка добавления информации о новой заправке-->
+        <Button
+            android:id="@+id/btnNewFullUp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Н.заправка"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnListOfFillUps"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Список"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

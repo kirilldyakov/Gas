@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Учет бензина</string>
+    <string name="labVolume">Объем заправленного бензина</string>
+    <string name="eiVolume">литры</string>
+    <string name="labPrice">Цена</string>
+    <string name="eiPrice">руб.</string>
+    <string name="labSumma">Сумма</string>
+    <string name="eiSumma">руб.</string>
+    <string name="labOdometr">Показания одометра</string>
+    <string name="eiOdometr">км</string>
+    <string name="fullTank">До полного бака</string>
+    <string name="btnOk">Button</string>
+    <string name="labFullTank">Заправка до полного бака?</string>
+    <string name="labDate">Дата</string>
+    <string name="eiDate">дд.мм.гггг</string>
+    <string name="smplDate">01.02.2016</string>
+    <string name="smplOdometr">233 456</string>
+    <string name="btnOK">Записать</string>
+    <string name="smplVolume">15.20</string>
+    <string name="ruYes">Да</string>
+    <string name="ruNo">Нет</string>
+    <string name="smplSumma">0.33</string>
+    <string name="smplPrice">0.00</string>
+
+    <string name="Graph_Power_AxisXFormat_DDMMYY">dd.MM.yy</string>
+    <string name="Graph_Power_AxisXFormat_DDMM">dd.MM</string>
+    <string name="Graph_Power_AxisXFormat_DDMMM">dd.MMM</string>
+    <string name="Graph_Power_AxisXFormat_MS">mm:ss</string>
+    <string name="Graph_Power_AxisXFormat_HMS">H:mm:ss</string>
+    <string name="Graph_Power_HorizontalAxisTitle">Время</string>
+    <string name="Graph_Power_VerticalAxisTitle">Стоимость</string>
+    <string name="en_Exit_Alert">"Are you sure you want to exit? "</string>
+
+
+    <string name="ru_exit_alert">"Вы точно хотите выйти из приложения? "</string>
+    <string name="ru_liters">л.</string>
+    <string name="ru_currency">руб.</string>
+    <string name="ru_kilometers">км</string>
+    <string name="labTime">Время</string>
+    <string name="smplTime">12:00</string>
+
+</resources>
